@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family= Oswald & display=swap');
+
+:root {
+    --cor-fundo-principal:  #54b1f0;
+    --cor-texto-principal: #f5f5f5;
+    --cor-de-fundo-header-2: #1b70e0;
+    --cor-1: #193aca;
+    --cor-2: #3E54DB;
+    --cor-3: #33a2ecf1;
+    --cor-4: #0830A6;
+    --cor-5: #0F5FA6;
+    --cor-6: #A60D0D;
+    --fonte-principal: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte-principal);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--cor-1);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 130px;
+}
+
+.titulo {
+    margin-left: -170px;
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--cor-4)
+}
+
+li {
+    float: left;
+    display: inline;
+}
+
+.active {
+    background-color: var(--cor-3);
+}
+
+li a {
+    display: block;
+    color: var(--cor-texto-principal);
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+}
+
+li a:hover {
+    background-color: var(--cor-3)
+}
+
+#Propaganda-principal {
+    height: 400px;
+    width: 900px;
+    box-shadow:
+        -0.2em 0 0.4em red,
+        2px 3px brown;
+    background-size: 940px;
+    min-height: 450px;
+    background-repeat: repeat;
+    animation: propaganda 15s infinite alternate;
+    margin-left: 460px;
+    margin-top: 60px;
+}
+
+
+#Noticias-principais {
+    margin-left: 345px;
+    margin-top: 60px;
+}
+
+#principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+main {
+    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main img {
+    width: 100%;
+}
+
+main p {
+    background-color: var(--cor-nav-hover);
+    color: var(--cor-nav-hover-text);
+    margin-top: -5px;
+}
+
+#primeira-noticia {
+    display: inline-block;
+    position: relative;
+
+}
+
+#primeira-noticia figcaption {
+    position: absolute;
+    top: 10px;
+    right: 34px;
+    left: 4px;
+    font-size: 24px;
+    color: rgb(22, 21, 21);
+    text-shadow: 0px 0px 40px rgb(61, 58, 58);
+    z-index: 2;
+}
+
+#primeira-noticia img {
+    height: auto;
+    width: 550px;
+    border-radius: 4%;
+    border: 3px solid rgb(9, 78, 143);
+}
+
+#segunda-noticia {
+    display: inline-block;
+    position: relative;
+}
+
+#segunda-noticia figcaption {
+    position: absolute;
+    top: 10px;
+    right: 34px;
+    left: 4px;
+    font-size: 24px;
+    color: rgb(22, 21, 21);
+    text-shadow: 0px 0px 40px rgb(61, 58, 58);
+    z-index: 2;
+}
+
+#segunda-noticia img {
+    height: auto;
+    width: 550px;
+    border-radius: 4%;
+    border: 3px solid rgb(9, 78, 143);
+}
+
+
+#terceira-noticia figcaption {
+    position: absolute;
+    top: 10px;
+    right: 34px;
+    left: 4px;
+    font-size: 24px;
+    color: rgb(22, 21, 21);
+    text-shadow: 0px 0px 40px rgb(61, 58, 58);
+    z-index: 2;
+}
+
+#terceira-noticia img {
+    height: auto;
+    width: 550px;
+    border-radius: 4%;
+    border: 3px solid rgb(9, 78, 143);
+}
+
+#terceira-noticia {
+    display: inline-block;
+    position: relative;
+}
+
+#quarta-noticia figcaption {
+    position: absolute;
+    top: 10px;
+    right: 34px;
+    left: 4px;
+    font-size: 24px;
+    color: rgb(22, 21, 21);
+    text-shadow: 0px 0px 40px rgb(61, 58, 58);
+    z-index: 2;
+}
+
+#quarta-noticia img {
+    height: 350px;
+    width: 540px;
+    border-radius: 4%;
+    border: 3px solid rgb(9, 78, 143);
+}
+
+#quarta-noticia {
+    display: inline-block;
+    position: relative;
+}
+
+.imagem-ampliavel img {
+    width: 100%;
+    transition: 0.3s all ease-in-out;
+}
+
+.imagem-ampliavel:hover img {
+    transform: scale(1.09);
+}
+
+.link-ampliavel {
+    display: inline-block;
+    width: 100%;
+    transition: 0.3s;
+    word-spacing: 4px;
+}
+
+.link-ampliavel:hover {
+    transform: scale(1.09);
+}
+
+a{
+    color: whitesmoke;
+}
+
+footer {
+    background-color: var(--cor-4);
+    height: 240px;
+    margin-top: 100px;
+}
+
+footer>p {
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.frase-footer {
+    font-size: 25px;
+    color: whitesmoke;
+}
